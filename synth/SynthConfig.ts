@@ -426,16 +426,17 @@ export class Config {
     public static readonly arpSpeedScale: ReadonlyArray<number> = [0, 0.0625, 0.125, 0.2, 0.25, 1 / 3, 0.4, 0.5, 2 / 3, 0.75, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.15, 4.3, 4.5, 4.8, 5, 5.5, 6, 8];
 
     public static readonly unisons: DictionaryArray<Unison> = toNameMap([
-        { name: "none", voices: 1, spread: 0.0, offset: 0.0, expression: 1.4, sign: 1.0 },
-        { name: "shimmer", voices: 2, spread: 0.018, offset: 0.0, expression: 0.8, sign: 1.0 },
-        { name: "hum", voices: 2, spread: 0.045, offset: 0.0, expression: 1.0, sign: 1.0 },
-        { name: "honky tonk", voices: 2, spread: 0.09, offset: 0.0, expression: 1.0, sign: 1.0 },
-        { name: "dissonant", voices: 2, spread: 0.25, offset: 0.0, expression: 0.9, sign: 1.0 },
-        { name: "fifth", voices: 2, spread: 3.5, offset: 3.5, expression: 0.9, sign: 1.0 },
-        { name: "octave", voices: 2, spread: 6.0, offset: 6.0, expression: 0.8, sign: 1.0 },
-        { name: "bowed", voices: 2, spread: 0.02, offset: 0.0, expression: 1.0, sign: -1.0 },
-        { name: "piano", voices: 2, spread: 0.01, offset: 0.0, expression: 1.0, sign: 0.7 },
-        { name: "warbled", voices: 2, spread: 0.25, offset: 0.05, expression: 0.9, sign: -0.8 },
+        { name: "no effect", voices: 1, spread: 0.0, offset: 0.0, expression: 1.4, sign: 1.0 },
+        { name: "custom major (shimmer)", voices: 2, spread: 0.018, offset: 0.0, expression: 0.8, sign: 1.0 },
+        { name: "custom major 2 (hum)", voices: 2, spread: 0.045, offset: 0.0, expression: 1.0, sign: 1.0 },
+        { name: "custom major 3 (honky tonk)", voices: 2, spread: 0.09, offset: 0.0, expression: 1.0, sign: 1.0 },
+        { name: "custom major 4 (dissonant)", voices: 2, spread: 0.25, offset: 0.0, expression: 0.9, sign: 1.0 },
+        { name: "pika major (fifth)", voices: 2, spread: 3.5, offset: 3.5, expression: 0.9, sign: 1.0 },
+        { name: "does not respond (octave)", voices: 2, spread: 6.0, offset: 6.0, expression: 0.8, sign: 1.0 },
+        { name: "custom major 5 (bowed)", voices: 2, spread: 0.02, offset: 0.0, expression: 1.0, sign: -1.0 },
+        { name: "custom major 6 (piano)", voices: 2, spread: 0.01, offset: 0.0, expression: 1.0, sign: 0.7 },
+        { name: "custom major 7 (warbled)", voices: 2, spread: 0.25, offset: 0.05, expression: 0.9, sign: -0.8 },
+        { name: "sad x (hecking gosh)", voices: 2, spread: 0.25, offset: 0.05, expression: 0.9, sign: -0.8 },
     ]);
     public static readonly effectNames: ReadonlyArray<string> = ["reverb", "chorus", "panning", "distortion", "bitcrusher", "note filter", "echo", "pitch shift", "detune", "vibrato", "transition type", "chord type"];
     public static readonly effectOrder: ReadonlyArray<EffectType> = [EffectType.panning, EffectType.transition, EffectType.chord, EffectType.pitchShift, EffectType.detune, EffectType.vibrato, EffectType.noteFilter, EffectType.distortion, EffectType.bitcrusher, EffectType.chorus, EffectType.echo, EffectType.reverb];
